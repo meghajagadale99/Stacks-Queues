@@ -16,7 +16,6 @@ public class MyStack {
         return top.key;
     }
 
-
     public void pop() {
         if (top == null)
             System.out.println("Stack empty");
