@@ -15,6 +15,16 @@ public class MyQueues {
             rear = node;
         }
     }
+    public void dequeue() {
+        if (front == null)
+            System.out.println("Queue Underflow");
+        else {
+            MyNode temp = front;
+            System.out.println("Dequeued element is " + temp.key);
+            front = front.next;
+        }
+
+    }
 
     public void display() {
         if (front == null)
